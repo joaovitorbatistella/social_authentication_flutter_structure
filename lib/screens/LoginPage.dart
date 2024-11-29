@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_authentication_flutter_structure/components/GoogleLoginButton.dart';
+import 'package:social_authentication_flutter_structure/screens/HomePage.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -27,7 +28,17 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.redAccent
                 ),
               ),
-              GoogleLoginButton()
+              GoogleLoginButton(),
+              ElevatedButton(onPressed: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
+              }, child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Test Auth", style: TextStyle(color: Colors.black)),
+                ],
+              ))
             ],
           )
       ),

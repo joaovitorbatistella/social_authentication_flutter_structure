@@ -6,6 +6,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser;
 
+    if (user == null) {
+      print("Unauthenticated.");
+      Future.microtask(() {
+        Navigator.of(context).pushReplacementNamed('/');
+      });
+      return Scaffold(); // Retorna uma tela vazia temporária
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Home Page"),
