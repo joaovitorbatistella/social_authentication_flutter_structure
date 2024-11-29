@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "538347695231",
+    "project_id": "social-authentication-te-93cc1",
+    "storage_bucket": "social-authentication-te-93cc1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538347695231:android:4749802c9e231fdd2e234a",
+        "android_client_info": {
+          "package_name": "com.socialauthenticationtest.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538347695231-sei6jos40pq947ue1p9jf3d51k3a5poh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-08Tq37Ur7m2P2Ff3CIxNCrayIRSwWio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538347695231-sei6jos40pq947ue1p9jf3d51k3a5poh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
