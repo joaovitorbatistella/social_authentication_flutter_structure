@@ -1,18 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:social_authentication_flutter_structure/firebase_options.dart' as FBOpt;
+// import 'package:social_authentication_flutter_structure/firebase_options.dart' as FBOpt;
 import 'package:social_authentication_flutter_structure/screens/HomePage.dart';
 import 'package:social_authentication_flutter_structure/screens/LoginPage.dart';
 
 void main() async {
-  // WidgetsFlutterBinding.ensureInitialized();
 
-  // await dotenv.load(fileName: '.env');
-
-  await Firebase.initializeApp(
-      options: FBOpt.DefaultFirebaseOptions.android
-  );
   runApp(SocialAuthenticationFlutter());
 }
 
