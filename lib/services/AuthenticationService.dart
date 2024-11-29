@@ -37,14 +37,4 @@ class AuthenticationService {
       return null;
     }
   }
-
-  // Método de logout
-  // Future<void> logout() async {
-  //   try {
-  //     await _auth.signOut();
-  //     await _googleSignIn.signOut();
-  //   } catch(e) {
-  //     return;
-  //   }
-  // }
 }
