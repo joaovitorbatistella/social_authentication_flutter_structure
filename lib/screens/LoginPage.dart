@@ -12,25 +12,8 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   final formKey = GlobalKey<FormState>();
-  final userController = TextEditingController(text: 'emilys');
-  final passwordController = TextEditingController(text: 'emilyspass');
-  bool loging = false;
 
   // final authenticateService = ServicoAutenticacao();
-
-  Future<void> registerLogin() async{
-    if(!formKey.currentState!.validate()) {
-      return;
-    }
-
-    setState(() {
-      loging = true;
-    });
-
-    ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Loging..."))
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
